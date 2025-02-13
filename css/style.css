@@ -128,3 +128,70 @@ h2 {
     text-align: center;
     margin-bottom: 60px;
 }
+.academico-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.academico-boxes:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #ababab;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.academico-boxes .box {
+    position: relative;
+    background: #ffbe6d;
+    border: 2px solid #ababab;
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.academico-boxes .box:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #404040;
+    border: 2px solid #ababab;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.academico-boxes .box:nth-child(even) {
+    align-self: flex-end;
+    border-radius: 10px 10px 10px 0;
+    margin-left: 20px;
+}
+
+.academico-boxes .box:nth-child(even):before {
+    left: -30px;
+}
+
+.academico-boxes .box:nth-child(odd) {
+    align-self: flex-start;
+    border-radius: 10px 10px 0 10px;
+    margin-right: 20px;
+}
+
+.academico-boxes .box:nth-child(odd):before {
+    right: -30px;
+}
+
+.academico-boxes .box h3 {
+    margin: 0;
+}
+
+.academico-boxes .box p {
+    margin: 5px 0;
+}
