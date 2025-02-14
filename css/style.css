@@ -195,3 +195,23 @@ h2 {
 .academico-boxes .box p {
     margin: 5px 0;
 }
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+.tablaIdiomas {
+    text-align: center;
+    margin-bottom: 60px;
+}
